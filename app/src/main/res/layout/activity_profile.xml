@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calibration Instrution:"
+            android:textSize="20dp"
+            android:textColor="#0B2D6A"
+            android:textStyle="italic">
+        </TextView>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Label:"
+            android:textSize="20dp"
+            android:textColor="#000000" >
+        </TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:hint="Please Enter Your Label"
+            android:text=""
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:id="@+id/txt_profile_name_ans"
+            android:textColor="#666666" >
+        </EditText>
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Press First for First Use/ML Callibration"
+            android:textSize="20dp"
+            android:textColor="#0B2D6A"
+            android:textStyle="italic">
+        </TextView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Measure"
+            android:layout_gravity="center"
+            android:id="@+id/btn_profile_measure"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+        </Button>
+        <TextView
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Record three BP records"
+            android:textSize="20dp"
+            android:textColor="#0B2D6A"
+            android:textStyle="italic">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:text="Systolic Blood Pressure:"
+            android:textSize="20dp"
+            android:textColor="#000000">
+        </TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="Please Enter Your Current SBP"
+            android:text=""
+            android:textSize="20dp"
+
+            android:textStyle="italic"
+            android:id="@+id/txt_current_bp_ans"
+            android:textColor="#666666" >
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Diastolic Blood Pressure:"
+            android:textSize="20dp"
+            android:textColor="#000000">
+        </TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp"
+            android:hint="Please Enter Your Current DBP"
+            android:text=""
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:id="@+id/txt_current_hr_ans"
+            android:textColor="#666666" >
+        </EditText>
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Press For First Use Calibration"
+            android:textSize="20dp"
+            android:textColor="#0B2D6A"
+            android:textStyle="italic">
+        </TextView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FIRST CALIBRATION"
+            android:layout_gravity="center"
+            android:id="@+id/btn_profile_cali"
+            android:layout_marginTop="10dp">
+        </Button>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Press For Re Calibration"
+            android:textSize="20dp"
+            android:textColor="#0B2D6A"
+            android:textStyle="italic">
+        </TextView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Re-Calibration"
+            android:layout_gravity="center"
+            android:id="@+id/btn_profile_calibration"
+            android:layout_marginTop="10dp"
+            >
+
+        </Button>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Press For ML Calibration"
+            android:textSize="20dp"
+            android:textColor="#0B2D6A"
+            android:textStyle="italic">
+        </TextView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ML Calibration"
+            android:layout_gravity="center"
+            android:id="@+id/btn_ml_calibration"
+            android:layout_marginTop="10dp"
+            >
+
+        </Button>
+
+
+
+
+
+    </LinearLayout>
+
+    <!--4 Bottom Buttons-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom" >
+
+        <!--Current Condition-->
+        <Button
+            android:id="@+id/btn_main_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Home"
+            android:textSize="15sp"
+            tools:ignore="ButtonStyle,HardcodedText">
+
+        </Button>
+
+        <!--History-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History"
+            android:id="@+id/btn_main_history"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            tools:ignore="ButtonStyle,HardcodedText">
+        </Button>
+
+        <!--Device-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device"
+            android:id="@+id/btn_main_device"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            tools:ignore="ButtonStyle,HardcodedText">
+        </Button>
+
+        <!--Profile-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALIBRATION"
+            android:id="@+id/btn_main_profile"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="#3177F0"
+            android:textSize="15sp"
+            tools:ignore="ButtonStyle,HardcodedText">
+        </Button>
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

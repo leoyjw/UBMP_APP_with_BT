@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!--Blood Pressure UI-->
+
+        <!--Hear Rate UI-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints,UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/blood_pressure"
+                tools:ignore="ContentDescription" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            tools:ignore="MissingConstraints,UseCompoundDrawables">
+
+
+            <TextView
+
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="40dp"
+                android:layout_weight="1"
+                android:text="SYS"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="50dp"
+                android:textStyle="bold"
+
+                tools:ignore="HardcodedText" />
+
+            <TextView
+
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+
+
+                android:text="mmHG"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15dp"
+                android:textStyle="bold"
+
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/SBP"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="40dp"
+                android:text="---"
+                android:textColorHighlight="@android:color/black"
+                android:textSize="50dp"
+                android:textStyle="bold"
+
+                 />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+
+            tools:ignore="MissingConstraints,UseCompoundDrawables">
+
+
+            <TextView
+
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="40dp"
+                android:layout_weight="1"
+                android:text="DIA"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="50dp"
+                android:textStyle="bold"
+
+                tools:ignore="HardcodedText" />
+            <TextView
+
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+
+
+                android:text="mmHG"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15dp"
+                android:textStyle="bold"
+
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:id="@+id/DBP"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="40dp"
+                android:text="---"
+                android:textColorHighlight="@android:color/black"
+                android:textSize="50dp"
+                android:textStyle="bold"
+
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+
+            tools:ignore="MissingConstraints,UseCompoundDrawables">
+
+
+            <TextView
+
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="40dp"
+                android:layout_weight="1"
+                android:text="PUL"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="50dp"
+                android:textStyle="bold"
+
+                tools:ignore="HardcodedText" />
+
+            <TextView
+
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+
+
+                android:text="/min"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15dp"
+                android:textStyle="bold"
+
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/heartrate"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="40dp"
+                android:text="---"
+                android:textColorHighlight="#44484E"
+                android:textSize="50dp"
+                android:textStyle="bold"
+
+                />
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:text="Label:"
+            android:textSize="20dp"
+            android:textColor="#000000">
+        </TextView>
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="Please Enter The TEST LABEL"
+            android:text=""
+            android:textSize="20dp"
+
+            android:textStyle="italic"
+            android:id="@+id/txt_label"
+            android:textColor="#666666" >
+        </EditText>
+
+        </LinearLayout>
+
+
+
+    <!--4 Bottom Buttons-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom" >
+
+        <!--Current Condition-->
+        <Button
+            android:id="@+id/btn_main_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MLPOWER"
+
+            android:textColor="#000000"
+            android:textSize="15sp"
+            tools:ignore="ButtonStyle,HardcodedText">
+
+        </Button>
+
+        <!--History-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Measure"
+            android:id="@+id/btn_main_history"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            tools:ignore="ButtonStyle,HardcodedText">
+        </Button>
+
+        <!--Device-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device"
+            android:id="@+id/btn_main_device"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            tools:ignore="ButtonStyle,HardcodedText">
+        </Button>
+
+        <!--Profile-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calibration"
+            android:id="@+id/btn_main_profile"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            tools:ignore="ButtonStyle,HardcodedText">
+        </Button>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
